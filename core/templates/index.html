@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>fill out the form</h1>
+      <form method="post">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit" class="button" name="submit" value="Search">
+      </form>
+    {{ result }}
+</body>
+</html>
